@@ -1,11 +1,261 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Andreas Brake | About</title>
+    
+    <style>
+      body {
+        background-color: rgb(40, 40, 40);
+        color: rgb(190, 190, 190);
+      }
+      p {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        line-height: 1.35em;
+        font-size: 1em;
+        letter-spacing: 0.01em;
+      }
+      h1, h2, h3 {
+        color: rgb(240, 240, 240);
+        font-family: sans-serif;
+      }
+      h1 {
+        font-size: 1.5em;
+      }
+      h2 {
+        font-size: 1.1em;
+        margin-top: 54px;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+      }
+      h3 {
+        font-size: 1em;
+        margin: 0 0 0.25em;
+        line-height: 1.5em;
+        letter-spacing: 0.05em;
+      }
+      ul {
+        padding-left: 1em;
+      }
+      .container {
+        max-width: 560px;
+        margin: 0 auto;
+        padding: 0.5em 1.5em;
+      }
+      .emphasized-content {
+        color: rgb(125, 125, 125);
+        font-weight: bold;
+        font-family: sans-serif;
+        line-height: 1.7em;
+        font-size: 0.9em;
+        letter-spacing: 0.02em;
+      }
+    </style>
+
+    <style>
+      .header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+      }
+      .header-content {
+        flex: 9;
+      }
+      .header-image {
+        flex: 3;
+        text-align: right;
+      }
+      .header-image img {
+        max-width: 6em;
+        max-height: 6em;
+        border-radius: 3em;
+        margin-top: -2.5em;
+      }
+      @media only screen and (max-width: 600px){
+        .header {
+          flex-direction: column;
+        }
+        .header-image {
+          text-align: left;
+          margin: 2em 0 0;
+        }
+        .header-image img {
+          margin-top: 0;
+        }
+      }
+    </style>
+
+    <style>
+      .timeline-table {
+        width: 100%;
+      }
+      .timeline-row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+      }
+      .timeline-timestamp {
+        width: 100%;
+        flex: 3;
+      }
+      .timeline-content {
+        width: 100%;
+        flex: 9;
+        margin-bottom: 0.5em;
+      }
+      @media only screen and (max-width: 600px){
+        .timeline-row {
+          flex-direction: column;
+        }
+        .timeline-content {
+          margin-bottom: 2em;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>This is a test</h1>
-    <p>
-      testing... 1... 2... 3...
-    </p>
+    <div class="container">
+      <h1>Andreas Brake</h1>
+      <div class="header">
+        <div class="header-content">
+          <span class="emphasized-content">Senior Software Engineer</span>
+          <br />
+          <span class="emphasized-content">UI, Databases, and Everything In Between</span>
+        </div>
+        <div class="header-image">
+          <img src="https://avatars.githubusercontent.com/u/2818272" alt="A picture of me. Looking reaaal good." />
+        </div>
+      </div>
+      <h2>About</h2>
+      <p>
+        I am a dedicated software engineer with experience in full stack
+        web design and development who thrives in fast-paced, agile work
+        environments. I have lead teams to meet development milestones
+        and successfully coordinated with clients, executives, and internal
+        departments to identify and plan product objectives and timelines.
+      </p>
+      <h2>Contact</h2>
+      <div class="timeline-table">
+        <div class="timeline-row">
+          <div class="timeline-timestamp">
+            <span class="emphasized-content">Github</span>
+          </div>
+          <div class="timeline-content">
+            <span class="emphasized-content">
+              <a
+                href="https://github.com/andreasbrake"
+                target="_blank"
+              >https://github.com/andreasbrake</a>
+            </span>
+          </div>
+        </div>
+        <div class="timeline-row">
+          <div class="timeline-timestamp">
+            <span class="emphasized-content">LinkedIn</span>
+          </div>
+          <div class="timeline-content">
+            <span class="emphasized-content">
+              <a
+                href="https://www.linkedin.com/in/andreas-brake"
+                target="_blank"
+              >https://www.linkedin.com/in/andreas-brake</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <h2>History</h2>
+      <div class="timeline-table">
+        <div class="timeline-row">
+          <div class="timeline-timestamp">
+            <span class="emphasized-content">2019-Present</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Senior Software (Server) Engineer</h3>
+            <span class="emphasized-content">Topgolf Media, San Francisco, CA</span>
+            <p>
+              At Topgolf Media, I implemented gameserver support for new and existing features of WGT Golf mobile game, quickly becoming the senior member of the server team.
+              Additionally, I lead the development of core AI/ML features from design to production deployment, introducing new paradigms and technologies to the team.
+            </p>
+            <p>
+              Since 2020, I have also been part of the team leading the development of the gamserver behind Tee Time Adventures, the latest title from Topgolf Media.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-row">
+          <div class="timeline-timestamp">
+            <span class="emphasized-content">2018-Present</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Software Engineering Consultant</h3>
+            <span class="emphasized-content">Freelance, Contract</span>
+            <p>
+              Since 2018, I have pursued my interests in modern web development by working as a consultant mainly to startups and small companies who are seeking a strong experienced developer. My contributions have included:
+              <ul>
+                <li>
+                  Providing advice for the selection of technologies and application architectures
+                </li>
+                <li>
+                  Developing core platform functionalities based on provided business objectives
+                </li>
+                <li>
+                  Helping set up CI/CD pipelines along with production deployment processes
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="timeline-row">
+          <div class="timeline-timestamp">
+            <span class="emphasized-content">2015-2018</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Principal Software Engineer</h3>
+            <span class="emphasized-content">Anaqua (Lecorpio), Fremont, CA</span>
+            <p>
+              <ul>
+                <li>
+                  My role involved developing original functionality and product offerings with input from clients and internal product teams.
+                </li>
+                <li>
+                  I also enhanced existing functionality to meet client demands.
+                </li>
+              </ul>
+              In early 2016, we overhauled the existing ASP.NET platform.
+              <ul>
+                <li>
+                  I participated in large-scale architectural decisions and designed many new core platform functionalities.
+                </li>
+                <li>
+                  I lead a team to develop the application's Angular font-end.
+                </li>
+              </ul>
+              In July 2017, Lecorpio LLC merged with Anaqua Inc and I
+              <ul>
+                <li>
+                  Rapidly learned the codebase and processes of Anaqua.
+                </li>
+                <li>
+                  Maintained the existing Lecorpio customer base to ensure maximum client retention.
+                </li>
+              </ul>
+              In 2018, a product re-design was initiated. I contributed by
+              <ul>
+                <li>
+                  Working with upper management to identify feasible enhancements given a tight timeline and upgrade restrictions.
+                </li>
+                <li>
+                  Sharing knowledge and experience with engineering team regarding benefits and pitfalls of modern web development.
+                </li>
+                <li>
+                  Assisting with technology selection and architectural designs.
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
